@@ -5,6 +5,7 @@ class Race(models.Model):
     state = models.BooleanField(default=True)
     subjects = models.CharField(max_length=50)
     categories = models.CharField(max_length=100)
+    total_score = models.IntegerField(default=100)
 
 class Player(models.Model):
     name = models.CharField(max_length = 50)
