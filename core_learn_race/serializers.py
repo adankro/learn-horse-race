@@ -11,7 +11,7 @@ class RaceSerializer(ModelSerializer):
     players = PlayerSerializer(many=True, read_only=True)
     class Meta:
         model = Race
-        fields = ['id', 'group', 'state', 'subjects', 'categories', 'players']
+        fields = ['id', 'group', 'state', 'subjects', 'categories', 'total_score','players']
 
 class QuestionSerializer(ModelSerializer):
 
